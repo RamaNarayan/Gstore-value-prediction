@@ -1,0 +1,207 @@
+
+
+LGBM - All data - boosting_type='gbdt', class_weight=None, colsample_bytree=0.8, importance_type='split',
+				  learning_rate=0.01, max_depth=5, metric='rmse', min_child_samples=20, min_child_weight=0.001, 
+				  min_split_gain=0.0, n_estimators=10000, n_jobs=-1, num_leaves=32, objective=None, random_state=1,
+				  reg_alpha=0.05, reg_lambda=0.05, silent=True, subsample=0.8, subsample_for_bin=200000, subsample_freq=1
+R2:  0.9990233318212274
+explained_variance_score:  0.9990236783998038
+mean_absolute_error:  0.009243146928649686
+mean_squared_error:  0.004452792167213956
+median_absolute_error:  3.057728840567853e-05
+root_mean_squared_error:  0.0667292452168759
+
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBM - 180k  - boosting_type='gbdt', class_weight=None, colsample_bytree=0.8, importance_type='split',
+							learning_rate=0.01, max_depth=5, metric='rmse', min_child_samples=20, min_child_weight=0.001, 
+							min_split_gain=0.0, n_estimators=10000, n_jobs=-1, num_leaves=32, objective=None, random_state=1,
+							reg_alpha=0.05, reg_lambda=0.05, silent=True, subsample=0.8, subsample_for_bin=200000, subsample_freq=1
+R2:  0.9911923133188978
+explained_variance_score:  0.9911925459799852
+mean_absolute_error:  0.026407596482562024
+mean_squared_error:  0.04015570397120164
+median_absolute_error:  0.0
+root_mean_squared_error:  0.20038888185526071
+
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBMRegressor(boosting_type='dart', num_leaves=64, max_depth=7, learning_rate=0.001,
+                             n_estimators=10000, bagging_freq = 100, feature_fraction = 0.7, 
+                             reg_alpha=0.01, reg_lambda=0.01, bagging_fraction = 0.7, n_jobs = 4, metric= 'rmse')
+
+All Data
+
+LGBMRegressor(bagging_fraction=0.7, bagging_freq=100, boosting_type='dart',
+       class_weight=None, colsample_bytree=1.0, feature_fraction=0.7,
+       importance_type='split', learning_rate=0.001, max_depth=7,
+       metric='rmse', min_child_samples=20, min_child_weight=0.001,
+       min_split_gain=0.0, n_estimators=10000, n_jobs=4, num_leaves=64,
+       objective=None, random_state=None, reg_alpha=0.01, reg_lambda=0.01,
+       silent=True, subsample=1.0, subsample_for_bin=200000,
+       subsample_freq=0)
+
+LG - ALl Data- No Grid	   
+
+R2:  0.9712322347053914
+explained_variance_score:  0.9712838140268554
+mean_absolute_error:  0.0653709825282862
+mean_squared_error:  0.13115701192708
+median_absolute_error:  2.953663870264378e-05
+root_mean_squared_error:  0.3621560601827339
+
+
+---------------------------------------------------------------------------------------------------------------------------
+All Data
+
+LGBMRegressor(boosting_type='dart', num_leaves=28, max_depth=5, learning_rate=0.1,
+                             n_estimators=10000, bagging_freq = 50, feature_fraction = 0.5, 
+                             reg_alpha=0.01, reg_lambda=0.01, bagging_fraction = 0.5, n_jobs = -1, metric= 'rmse')
+							 
+LGBMRegressor(bagging_fraction=0.5, bagging_freq=50, boosting_type='dart',
+       class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+       importance_type='split', learning_rate=0.1, max_depth=5,
+       metric='rmse', min_child_samples=20, min_child_weight=0.001,
+       min_split_gain=0.0, n_estimators=10000, n_jobs=-1, num_leaves=28,
+       objective=None, random_state=None, reg_alpha=0.01, reg_lambda=0.01,
+       silent=True, subsample=1.0, subsample_for_bin=200000,
+       subsample_freq=0)
+	   
+R2:  0.99622210505743
+explained_variance_score:  0.9965001683846643
+mean_absolute_error:  0.0444684790779056
+mean_squared_error:  0.01722404945144491
+median_absolute_error:  2.6371748434982713e-05
+root_mean_squared_error:  0.131240426132518
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBM - 180k - Default - PCA
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.1, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+	   
+R2:  -0.0033985316143732014
+explained_variance_score:  0.00163402274846991
+mean_absolute_error:  0.40194567871065945
+mean_squared_error:  4.574660277947456
+median_absolute_error:  4.888744767546263e-05
+root_mean_squared_error:  2.138845547941098
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBM - 180k - Default
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.1, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+	   
+R2:  0.9977112700375163
+explained_variance_score:  0.9977417643836942
+mean_absolute_error:  0.011872393301597436
+mean_squared_error:  0.010434699390557323
+median_absolute_error:  7.042355810763477e-06
+root_mean_squared_error:  0.10215037636033125
+
+---------------------------------------------------------------------------------------------------------------------------
+LGBM - CV - 5
+
+lgbm_params =  { 'boosting_type': 'gbdt', 'objective': 'regression', 'metric': 'rmse', 'n_jobs':-1,
+                "learning_rate": 0.05,"num_leaves": 31, "max_depth": 5, "reg_alpha": 0.05, "reg_lambda": 0.1 }
+
+lgb_cv = lgb.cv(params = lgbm_params, train_set = lgtrain, num_boost_round = 1500,
+    stratified=False, nfold = 5, verbose_eval = 100, seed = 42, early_stopping_rounds = 50)
+
+[100]	cv_agg's rmse: 0.0231208 + 0.00394271
+[200]	cv_agg's rmse: 0.0202216 + 0.0044115
+optimal rounds 173
+best_cv_score 0.020213822990105896
+
+R2:  0.9997373877443413
+explained_variance_score:  0.999740141473135
+mean_absolute_error:  0.0038140604285601355
+mean_squared_error:  0.001197292816973733
+median_absolute_error:  2.601777181214687e-05
+root_mean_squared_error:  0.03460191926719865
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBM - All Data - PCA - Default
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.1, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+
+R2:  -0.6059981980829254
+explained_variance_score:  -0.6054983209172964
+mean_absolute_error:  0.4677795146499948
+mean_squared_error:  7.322012073711816
+median_absolute_error:  1.8637351622547764e-05
+root_mean_squared_error:  2.705921668066505
+---------------------------------------------------------------------------------------------------------------------------
+
+LGBM - All Data - Default
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.1, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+	   
+R2:  0.9997405616180711
+explained_variance_score:  0.9997432429580044
+mean_absolute_error:  0.0037375979363738604
+mean_squared_error:  0.0011828226003833368
+median_absolute_error:  7.314917583695227e-06
+root_mean_squared_error:  0.03439218807205114
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+All Data
+
+(n_estimators=500, learning_rate=0.05)
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.05, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=500, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+	   
+R2:  0.9997347724318338
+explained_variance_score:  0.9997375879224862
+mean_absolute_error:  0.0037628824261465247
+mean_squared_error:  0.0012092164603371006
+median_absolute_error:  5.202807371035223e-07
+root_mean_squared_error:  0.034773789847198144
+
+---------------------------------------------------------------------------------------------------------------------------------
+All data
+
+LGBMRegressor(n_estimators=10000)
+
+LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+       importance_type='split', learning_rate=0.1, max_depth=-1,
+       min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+       n_estimators=10000, n_jobs=-1, num_leaves=31, objective=None,
+       random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+       subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+	   
+R2:  0.9997023537188554
+explained_variance_score:  0.9997046144216127
+mean_absolute_error:  0.0042389261588295256
+mean_squared_error:  0.0013570187481141895
+median_absolute_error:  8.425001365841562e-07
+root_mean_squared_error:  0.036837735382542036

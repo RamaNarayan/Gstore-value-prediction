@@ -1,0 +1,88 @@
+---------------------------------------------------------------------------------------------------------------------------
+
+GridSearchCV(cv=5, error_score='raise-deprecating',
+       estimator=AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=50, random_state=None),
+       iid='warn', n_jobs=-1,
+       param_grid=[{'learning_rate': [0.01, 0.1, 1.0], 'n_estimators': [100, 300]}],
+       pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+       scoring=None, verbose=0)
+	   
+AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=100, random_state=None)
+		 
+{'learning_rate': 1.0, 'n_estimators': 100}
+
+0.9994897521006325
+
+AB -180k - Param GridSearchCV
+R2:  0.9970494864177973
+explained_variance_score:  0.9970845057241263
+mean_absolute_error:  0.012706941795763572
+mean_squared_error:  0.013451880642410973
+median_absolute_error:  0.0
+root_mean_squared_error:  0.11598224278919154
+
+---------------------------------------------------------------------------------------------------------------------------
+
+AdaBoostRegressor(learning_rate = 1.0, n_estimators = 50)
+
+AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=50, random_state=None)
+
+AB - All Data - No Grid
+
+R2:  0.9986950947434613
+explained_variance_score:  0.9987007395769012
+mean_absolute_error:  0.007705281855794374
+mean_squared_error:  0.005949279429349275
+median_absolute_error:  0.0
+root_mean_squared_error:  0.07713157219549771
+
+---------------------------------------------------------------------------------------------------------------------------
+
+AB- Default- 180k - PCA
+
+AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=50, random_state=None)
+		 
+R2:  -0.018830216674651457
+explained_variance_score:  0.061958974934203326
+mean_absolute_error:  1.005873029554277
+mean_squared_error:  4.645015888846616
+median_absolute_error:  0.7252185577971576
+root_mean_squared_error:  2.1552298923424886
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+AB - Default - 180k
+
+AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=50, random_state=None)
+		 
+R2:  0.9971282711449649
+explained_variance_score:  0.9971638535893323
+mean_absolute_error:  0.012796805719136564
+mean_squared_error:  0.013092688008052179
+median_absolute_error:  0.0
+root_mean_squared_error:  0.11442328437888932
+
+---------------------------------------------------------------------------------------------------------------------------
+
+AB - Default - All Data
+AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+         n_estimators=50, random_state=None)
+		 
+R2:  0.9989014718320764
+explained_variance_score:  0.9989067442043927
+mean_absolute_error:  0.007015556090782488
+mean_squared_error:  0.005008372063212831
+median_absolute_error:  0.0
+root_mean_squared_error:  0.07076985278501596
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------

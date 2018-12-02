@@ -1,0 +1,159 @@
+---------------------------------------------------------------------------------------------------------------------------
+
+XGBRegressor(booster='gbtree', objective='reg:linear', eval_metric='rmse', learning_rate= 0.05, max_depth= 7,
+                             reg_alpha=0.1, reg_lambda=0.1, random_state= 42, nthread=-1, silent=True)
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, eval_metric='rmse', gamma=0, learning_rate=0.05,
+       max_delta_step=0, max_depth=7, min_child_weight=1, missing=None,
+       n_estimators=100, n_jobs=1, nthread=-1, objective='reg:linear',
+       random_state=42, reg_alpha=0.1, reg_lambda=0.1, scale_pos_weight=1,
+       seed=None, silent=True, subsample=1)
+
+Xgboost - 180k
+	   
+R2:  0.9971600949039655
+explained_variance_score:  0.9971747342914482
+mean_absolute_error:  0.01820073543911247
+mean_squared_error:  0.012947598214108895
+median_absolute_error:  0.002960890531539917
+root_mean_squared_error:  0.11378751343670752
+
+---------------------------------------------------------------------------------------------------------------------------
+
+XGBRegressor(booster='gbtree', objective='reg:linear', eval_metric='rmse', learning_rate= 0.01, max_depth= 10,
+                             reg_alpha=0.05, reg_lambda=0.1, random_state= 42, nthread=-1, silent=True)
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, eval_metric='rmse', gamma=0, learning_rate=0.01,
+       max_delta_step=0, max_depth=10, min_child_weight=1, missing=None,
+       n_estimators=100, n_jobs=1, nthread=-1, objective='reg:linear',
+       random_state=42, reg_alpha=0.05, reg_lambda=0.1, scale_pos_weight=1,
+       seed=None, silent=True, subsample=1)
+	   
+Xgboost - 180k
+
+R2:  0.831716121353259
+explained_variance_score:  0.838880950197885
+mean_absolute_error:  0.3745262233446747
+mean_squared_error:  0.7672341057003279
+median_absolute_error:  0.18301647901535034
+root_mean_squared_error:  0.8759190063586518
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Xgboost - 180k
+
+XGBRegressor(booster='gbtree', objective='reg:linear', eval_metric='rmse', learning_rate= 0.05, max_depth= 7, 
+                             n_estimators=5000, reg_alpha=0.05, reg_lambda=0.1, random_state= 42, nthread=-1, silent=True)
+							 
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, eval_metric='rmse', gamma=0, learning_rate=0.05,
+       max_delta_step=0, max_depth=7, min_child_weight=1, missing=None,
+       n_estimators=5000, n_jobs=1, nthread=-1, objective='reg:linear',
+       random_state=42, reg_alpha=0.05, reg_lambda=0.1, scale_pos_weight=1,
+       seed=None, silent=True, subsample=1)
+	   
+R2:  0.9975640031075679
+explained_variance_score:  0.9975961243848608
+mean_absolute_error:  0.012158634009787301
+mean_squared_error:  0.011106113742346262
+median_absolute_error:  0.0
+root_mean_squared_error:  0.10538554807157507
+
+---------------------------------------------------------------------------------------------------------------------------
+
+XGB - Default - 180k
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=3, min_child_weight=1, missing=None, n_estimators=100,
+       n_jobs=1, nthread=None, objective='reg:linear', random_state=0,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=None,
+       silent=True, subsample=1)
+
+R2:  0.9977377838016935
+explained_variance_score:  0.9977679307286762
+mean_absolute_error:  0.01191950715287676
+mean_squared_error:  0.010313818743457567
+median_absolute_error:  4.5239925384521484e-05
+root_mean_squared_error:  0.1015569728943196
+
+---------------------------------------------------------------------------------------------------------------------------
+
+XGB - Default - PCA - 180k
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=3, min_child_weight=1, missing=None, n_estimators=100,
+       n_jobs=1, nthread=None, objective='reg:linear', random_state=0,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=None,
+       silent=True, subsample=1)
+	  
+R2:  -0.38384616893656087
+explained_variance_score:  -0.36450662928248656
+mean_absolute_error:  0.4740435804252743
+mean_squared_error:  6.309184138069717
+median_absolute_error:  0.0
+root_mean_squared_error:  2.5118089374133765
+
+---------------------------------------------------------------------------------------------------------------------------
+XGB - All Data
+
+XGBRegressor(booster='gbtree', objective='reg:linear', eval_metric='rmse', learning_rate= 0.05, max_depth= 5, 
+                             n_estimators=1000, reg_alpha=0.05, reg_lambda=0.1, random_state= 42, nthread=-1, silent=True)
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, eval_metric='rmse', gamma=0, learning_rate=0.05,
+       max_delta_step=0, max_depth=5, min_child_weight=1, missing=None,
+       n_estimators=1000, n_jobs=1, nthread=-1, objective='reg:linear',
+       random_state=42, reg_alpha=0.05, reg_lambda=0.1, scale_pos_weight=1,
+       seed=None, silent=True, subsample=1)
+	   
+R2:  -0.010858272603326391
+explained_variance_score:  0.0
+mean_absolute_error:  0.19483310883189464
+mean_squared_error:  3.5339064581133264
+median_absolute_error:  0.0
+root_mean_squared_error:  1.8798687342772968
+
+---------------------------------------------------------------------------------------------------------------------------
+All Data
+
+XGBRegressor(booster='gbtree', objective='reg:linear', eval_metric='rmse', learning_rate= 0.05, max_depth= 7, 
+                             n_estimators=500, reg_alpha=0.05, reg_lambda=0.1, random_state= 42, n_jobs=-1, silent=True)
+							 
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, eval_metric='rmse', gamma=0, learning_rate=0.05,
+       max_delta_step=0, max_depth=7, min_child_weight=1, missing=None,
+       n_estimators=500, n_jobs=-1, nthread=None, objective='reg:linear',
+       random_state=42, reg_alpha=0.05, reg_lambda=0.1, scale_pos_weight=1,
+       seed=None, silent=True, subsample=1)
+
+R2:  0.9997282876476915
+explained_variance_score:  0.999731090247878
+mean_absolute_error:  0.003736680336621249
+mean_squared_error:  0.0012387816664764222
+median_absolute_error:  5.960464477539062e-07
+root_mean_squared_error:  0.035196330298433415
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+All Data - Default
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=3, min_child_weight=1, missing=None, n_estimators=100,
+       n_jobs=1, nthread=None, objective='reg:linear', random_state=0,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=None,
+       silent=True, subsample=1)
+	   
+R2:  0.9997441484822519
+explained_variance_score:  0.999746835401777
+mean_absolute_error:  0.0037661692345171576
+mean_squared_error:  0.0011664694918493532
+median_absolute_error:  3.4809112548828125e-05
+root_mean_squared_error:  0.03415361608745629
+
+---------------------------------------------------------------------------------------------------------------------------

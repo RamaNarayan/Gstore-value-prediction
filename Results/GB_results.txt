@@ -1,0 +1,113 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------
+GB - All Data - alpha=0.9, criterion='friedman_mse', init=None,learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0, n_estimators=100, n_iter_no_change=None, presort='auto',
+             random_state=None, subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False
+R2:  0.9997462986589026
+explained_variance_score:  0.9997489938342173
+mean_absolute_error:  0.0037295549309430873
+mean_squared_error:  0.0011566664799804837
+median_absolute_error:  2.452163117224327e-05
+root_mean_squared_error:  0.034009799763898695
+
+-----------------------------------------------------------------------------------------------------------------------------------
+GB - Default-180K data 
+
+- alpha=0.9, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0, n_estimators=100, n_iter_no_change=None, presort='auto',
+             random_state=None, subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False
+R2:  0.9977387033817714
+explained_variance_score:  0.9977689383458825
+mean_absolute_error:  0.011876127667667916
+mean_squared_error:  0.010309626225407657
+median_absolute_error:  2.732341526722873e-05
+root_mean_squared_error:  0.10153632958408364
+
+-------------------------------------------------------------------------------------------------------------------------------------
+GB - Default - PCA 180k Data - 
+
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0,
+             min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0,
+             n_estimators=100, n_iter_no_change=None, presort='auto',
+             random_state=None, subsample=1.0, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+
+R2:  -0.47412808000098305
+explained_variance_score:  -0.4515476196908117
+mean_absolute_error:  0.49654909400976693
+mean_squared_error:  6.72079434014875
+median_absolute_error:  0.0
+root_mean_squared_error:  2.592449486518252
+
+-------------------------------------------------------------------------------------------------------------------------------------
+GradientBoostingRegressor(n_estimators=1000,learning_rate=0.01, max_depth=5)
+
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.01, loss='ls', max_depth=5, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0,
+             min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0,
+             n_estimators=1000, n_iter_no_change=None, presort='auto',
+             random_state=None, subsample=1.0, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+			 
+GB - All Data - No Grid
+
+R2:  0.9997466265955554
+explained_variance_score:  0.9997493299379454
+mean_absolute_error:  0.003698689751377337
+mean_squared_error:  0.0011551713624058607
+median_absolute_error:  1.2653088400293584e-05
+root_mean_squared_error:  0.033987811968496304
+
+---------------------------------------------------------------------------------------------------------------------------------------
+GridSearchCV(cv=5, error_score='raise-deprecating',
+       estimator=GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0,
+             min_impurity_split=None, min_samples_leaf=1,
+             min_sampl...=None, subsample=1.0, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False),
+       iid='warn', n_jobs=None,
+       param_grid=[{'learning_rate': [0.01, 0.1], 'n_estimators': [100, 300], 'max_depth': [3, 5]}],
+       pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+       scoring=None, verbose=0)
+
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.1, loss='ls', max_depth=3, max_features=None,
+             max_leaf_nodes=None, min_impurity_decrease=0.0,
+             min_impurity_split=None, min_samples_leaf=1,
+             min_samples_split=2, min_weight_fraction_leaf=0.0,
+             n_estimators=100, n_iter_no_change=None, presort='auto',
+             random_state=None, subsample=1.0, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+
+0.9998766617819633
+
+{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+
+GB -180k - Param GridSearchCV
+
+R2:  0.9977201014397534
+explained_variance_score:  0.9977505050262376
+mean_absolute_error:  0.011906915674936241
+mean_squared_error:  0.010394435563433568
+median_absolute_error:  2.7323415267253692e-05
+root_mean_squared_error:  0.10195310472679862
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

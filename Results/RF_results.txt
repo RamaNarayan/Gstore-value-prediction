@@ -1,0 +1,112 @@
+---------------------------------------------------------------------------------------------------------------------------
+
+GridSearchCV(cv=5, error_score='raise-deprecating',
+       estimator=RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators='warn', n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=False),
+       iid='warn', n_jobs=None,
+       param_grid=[{'max_features': ['auto', 'sqrt'], 'warm_start': [True, False], 'n_estimators': [400, 800], 'max_depth': [10, 20]}],
+       pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+       scoring=None, verbose=0)
+	   
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=10,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=400, n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=True)		   
+
+Best_params= { 'max_depth': 10, 'max_features': 'auto', 'n_estimators': 400, 'warm_start': True }
+
+Best CV Score = 0.999838123366152
+
+RF -180k - Param GridSearchCV
+R2:  0.9968859586594383
+explained_variance_score:  0.9968981264016077
+mean_absolute_error:  0.01651839622644655
+mean_squared_error:  0.014197430807113252
+median_absolute_error:  0.0
+root_mean_squared_error:  0.1191529722965955
+
+---------------------------------------------------------------------------------------------------------------------------
+
+RandomForestRegressor(n_estimators=1000, max_depth=20)
+
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=20,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1000, n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=False)
+		  
+RF - All Data - No Grid
+
+R2:  0.9997349365437597
+explained_variance_score:  0.999737745115133
+mean_absolute_error:  0.0037180380674494717
+mean_squared_error:  0.0012084682468562426
+median_absolute_error:  0.0
+root_mean_squared_error:  0.03476302988601889
+
+---------------------------------------------------------------------------------------------------------------------------
+RF- 180k-default - PCA
+
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=False)
+
+R2:  -0.07677550592154114
+explained_variance_score:  -0.06084197761830534
+mean_absolute_error:  0.4182296520827443
+mean_squared_error:  4.909198070362701
+median_absolute_error:  0.0
+root_mean_squared_error:  2.2156710203373384
+
+---------------------------------------------------------------------------------------------------------------------------
+RF - 180K default 
+
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=False)
+
+R2:  0.997703714656163
+explained_variance_score:  0.9977340516947708
+mean_absolute_error:  0.011844100236798069
+mean_squared_error:  0.01046914562689517
+median_absolute_error:  0.0
+root_mean_squared_error:  0.10231884297085836
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+RF- All Data- Default
+
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=None,
+           oob_score=False, random_state=None, verbose=0, warm_start=False)
+		   
+R2:  0.9997308485615137
+explained_variance_score:  0.9997336119106918
+mean_absolute_error:  0.0037265632975336965
+mean_squared_error:  0.0012271060357390588
+median_absolute_error:  0.0
+root_mean_squared_error:  0.035030073304791395
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
